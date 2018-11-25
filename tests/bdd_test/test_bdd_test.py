@@ -1,6 +1,6 @@
 import pytest
 from functools import partial
-from pytest_bdd import scenario, given, when, then
+from pytest_bdd import parsers, scenario, given, when, then
 
 features_base_dir = './features/'
 scenario = partial(scenario, 'bdd_test/bdd_test.feature',
@@ -27,12 +27,7 @@ def bdd_test_scenario(context):
     context['name'] = "a bdd test"
 
 
-@when("I run tests")
-def i_run_tests(context):
-    context['tested'] = True
-
-
-@when("I run tests again")
+@when(parsers.re(r'I run tests.*'))
 def i_run_tests(context):
     context['tested'] = True
 
