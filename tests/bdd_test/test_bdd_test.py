@@ -17,12 +17,22 @@ def test_bdd_test():
     pass
 
 
+@scenario('Run a second BDD test scenario')
+def test_bdd_test_2():
+    pass
+
+
 @given("a bdd test scenario")
 def bdd_test_scenario(context):
     context['name'] = "a bdd test"
 
 
 @when("I run tests")
+def i_run_tests(context):
+    context['tested'] = True
+
+
+@when("I run tests again")
 def i_run_tests(context):
     context['tested'] = True
 
