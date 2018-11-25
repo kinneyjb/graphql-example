@@ -1,5 +1,8 @@
 import pytest
+from functools import partial
 from pytest_bdd import scenario, given, when, then
+
+scenario = partial(scenario, 'bdd_test/bdd_test.feature')
 
 
 @pytest.fixture
@@ -7,7 +10,7 @@ def context():
     return dict()
 
 
-@scenario('bdd_test.feature', 'Run a BDD test scenario')
+@scenario('Run a BDD test scenario')
 def test_bdd_test():
     pass
 
