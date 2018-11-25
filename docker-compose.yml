@@ -1,0 +1,9 @@
+version: '2.2'
+services:
+  graphql-example:
+    build: .
+    image: graphql-example:latest
+    healthcheck:
+      test: ["CMD", "nc -z localhost 8080"]
+    ports:
+      - "8080:8080"

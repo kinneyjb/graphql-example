@@ -5,12 +5,17 @@ name = "pypi"
 
 [packages]
 graphene = "*"
+sqlalchemy = "*"
+graphene-sqlalchemy = "*"
+flask = "*"
+flask-graphql = "*"
 
 [dev-packages]
 "flake8" = "*"
 pytest = "*"
 behave = "*"
 pytest-bdd = "*"
+pytest-flask = "*"
 
 [requires]
 python_version = "3.7"

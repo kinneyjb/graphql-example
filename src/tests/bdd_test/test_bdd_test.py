@@ -2,7 +2,7 @@ import pytest
 from functools import partial
 from pytest_bdd import parsers, scenario, given, when, then
 
-features_base_dir = './features/'
+features_base_dir = './tests/features/'
 scenario = partial(scenario, 'bdd_test/bdd_test.feature',
                    features_base_dir=features_base_dir)
 
