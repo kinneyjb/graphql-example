@@ -10,6 +10,7 @@ graphene = "*"
 "flake8" = "*"
 pytest = "*"
 behave = "*"
+pytest-bdd = "*"
 
 [requires]
 python_version = "3.7"
