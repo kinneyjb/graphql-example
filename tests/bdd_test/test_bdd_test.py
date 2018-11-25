@@ -2,7 +2,9 @@ import pytest
 from functools import partial
 from pytest_bdd import scenario, given, when, then
 
-scenario = partial(scenario, 'bdd_test/bdd_test.feature')
+features_base_dir = './features/'
+scenario = partial(scenario, 'bdd_test/bdd_test.feature',
+                   features_base_dir=features_base_dir)
 
 
 @pytest.fixture
