@@ -56,7 +56,7 @@ And pytests to test the graphql.
 * [conftest.py](src/tests/flask/conftest.py)
 * [test_graphql_query.py](src/tests/flask/test_graphql_query.py)
 
-The tests and flask service is hardcoded to use the sqlite db `src/database.sqlite3`.
+The tests and flask service are hardcoded to use the sqlite db `src/database.sqlite3`.
 The sqlite db was generated using [generate_database.py](src/generate_database.py).
 
 ### running
