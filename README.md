@@ -99,7 +99,7 @@ Once the app is deployed, open it in a web browser:
 $ open http://$(oc get route/graphql-example --template='{{.spec.host}}')/graphql
 ```
 
-Delete everythin created by the template (optional):
+Delete everything created by the template (optional):
 
 ```bash
 $ oc delete all -l app=graphql-example
@@ -108,3 +108,4 @@ $ oc delete all -l app=graphql-example
 ## Kubernetes...
 
 TODO: IMPL
+
