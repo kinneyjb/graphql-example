@@ -8,7 +8,7 @@ RUN pip install pipenv && \
     adduser -u 1000 -S $SERVICE_USER -G $SERVICE_GROUP && \
     mkdir -p /opt/service
 
-COPY src /opt/service
+COPY . /opt/service
 
 WORKDIR /opt/service
 
