@@ -19,4 +19,4 @@ USER 1000
 RUN pipenv sync && \
     pipenv install gunicorn
 
-ENTRYPOINT pipenv run gunicorn --bind 0.0.0.0:8080 wsgi
+ENTRYPOINT pipenv run gunicorn --bind 0.0.0.0:8080 app.wsgi

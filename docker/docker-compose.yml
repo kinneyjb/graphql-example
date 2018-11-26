@@ -1,7 +1,8 @@
 version: '2.2'
 services:
   graphql-example:
-    build: .
+    build:
+      context: ..
     image: graphql-example:latest
     healthcheck:
       test: ["CMD", "nc -z localhost 8080"]
