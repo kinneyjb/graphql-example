@@ -5,15 +5,15 @@
 replicaCount: 1
 
 image:
-  repository: nginx
-  tag: stable
+  repository: graphql-example
+  tag: latest
   pullPolicy: IfNotPresent
 
 nameOverride: ""
 fullnameOverride: ""
 
 service:
-  type: ClusterIP
+  type: LoadBalancer
   port: 80
 
 ingress:
