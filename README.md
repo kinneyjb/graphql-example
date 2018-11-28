@@ -109,6 +109,12 @@ $ oc delete all -l app=graphql-example
 
 Install the graphql-example in [minikube](https://kubernetes.io/docs/setup/minikube/) using [helm](https://helm.sh/).
 
+Open the Kuberenetes dashboard using minikube
+
+```bash
+$ minikube dashboard
+```
+
 First build the image:
 
 ```bash
